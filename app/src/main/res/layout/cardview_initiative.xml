@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="394dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#F8F8F8"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274">
+
+        <!-- Votre contenu à l'intérieur du CardView -->
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="-30dp"
+            app:srcCompat="@drawable/coeur"></ImageView>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="145dp"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="175dp"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="113dp"
+            android:layout_height="116dp"
+            app:srcCompat="@drawable/cercle_jaune" />
+
+        <TextView
+            android:id="@+id/nomEntreprise"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-45dp"
+            android:padding="5dp"
+            android:text="Elixir BIO"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionEntreprise"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:padding="25dp"
+            android:text="Magasin BIO"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/heureOuverture"
+            android:layout_width="204dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="5dp"
+            android:padding="1dp"
+            android:text="Ouvre a 09:00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fermeture"
+            android:layout_width="265dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="5dp"
+            android:padding="1dp"
+            android:text="Ferme"
+            android:textColor="@color/rouge"
+
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-35dp"
+            android:layout_marginTop="35dp"
+            android:drawable="@drawable/appel"
+            android:text="Appeler"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:backgroundTint="@color/gris"></Button>
+
+        <ImageView
+            android:id="@+id/appel"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="-63dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/appel"></ImageView>
+
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="35dp"
+
+            android:drawablePadding="-5mm"
+            android:text="Itineraire"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:backgroundTint="@color/gris"></Button>
+
+        <ImageView
+            android:id="@+id/itineraire"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/emplacement"></ImageView>
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="35dp"
+
+            android:drawablePadding="-5mm"
+            android:text="Partager"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:backgroundTint="@color/gris"></Button>
+
+        <ImageView
+            android:id="@+id/partager"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="34dp"
+            app:srcCompat="@drawable/partager"></ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

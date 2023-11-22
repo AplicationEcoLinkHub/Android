@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barre_tache"
+        android:layout_width="535dp"
+        android:layout_height="822dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#FFFFFFFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" >
+
+        <EditText
+            android:id="@+id/a_propos"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="-60dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="15dp"
+            android:text="A propos" />
+        <EditText
+            android:id="@+id/profil"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="-130dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="15dp"
+            android:text="Profil" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/barre"
+            android:layout_width="578dp"
+            android:layout_height="220dp"
+            app:cardBackgroundColor="#F8F8F8"
+            app:cardCornerRadius="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="271dp"
+                android:layout_height="223dp"
+                android:padding="5dp"
+                android:layout_marginStart="255dp"
+                app:srcCompat="@drawable/logoecolinkhun" />
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/contacter"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="15dp"
+            android:text="Nous contacter" />
+
+        <EditText
+            android:id="@+id/termes"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="15dp"
+            android:text="Termes et conditions" />
+
+
+        <Button
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="245dp"
+            android:drawable="@drawable/appel"
+            android:text="Se deconnecter"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:backgroundTint="@color/vert"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
