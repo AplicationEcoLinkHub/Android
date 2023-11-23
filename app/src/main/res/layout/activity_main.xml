@@ -1,0 +1,38 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ellipse29Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Ellipse 29"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse_29" />
+
+    <ListView
+        android:id="@+id/postListView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:padding="16dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_add"
+
+    app:borderWidth="0dp"
+    app:elevation="6dp"
+    app:fabSize="normal" />
+
+</RelativeLayout>

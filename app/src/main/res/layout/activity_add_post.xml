@@ -1,0 +1,51 @@
+<!-- res/layout/activity_add_post.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity">
+
+    <!-- ImageView for displaying selected image -->
+    <ImageView
+        android:id="@+id/imageViewSelectedImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <!-- Button to launch image picker -->
+    <Button
+        android:id="@+id/buttonPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewSelectedImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Pick Image"
+        android:background="@color/green" />
+
+
+    <!-- EditText for entering post text -->
+    <EditText
+        android:id="@+id/editTextPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPickImage"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your post text"
+        android:padding="16dp" />
+
+    <!-- Button to submit the post -->
+    <Button
+        android:id="@+id/buttonSubmitPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPostContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit Post" />
+
+</RelativeLayout>
